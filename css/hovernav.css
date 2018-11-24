@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	background-color: lightgray;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+
+	
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header {
+  background: #3E558A;
+	margin: 0;
+	padding: 0;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+header nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 28px;
+
+  position: relative;
+}
+
+.navButton {
+	border: 1px solid #3E558A;
+	background: none;
+	font-size: 16px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	margin: 10px;
+	cursor: pointer;
+	padding: 10px 20px;
+	color: white;
+	position: relative;
+	transition: 0.9s;
+	overflow: hidden;
+}
+
+.navButton:hover {
+	color: lightgray; /* THIS IS THE BUTTON TEXT HOVER COLOR */
+	background: #4B9BE5; /* THIS IS THE BUTTON BACKGROUND HOVER COLOR */
+}
+
+.navButton:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	z-index: -1;
+	transition: 0.9s;
+ 	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+.navButton:hover::before {
+	height: 180%;
+}
+
+.logo {
+  float: left;
+  padding: 10px 10px;
+}
+
+
+header {
+		border-bottom: medium;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-width: 5px;
+}
+
+header img {
+	border-top-style: inherit;
+	border-top-width: thin;
+	border-width: 5px;
+	
+}
+
+
+	
