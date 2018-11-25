@@ -1,0 +1,189 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<title>SECCDC Homepage</title>
+	
+<link href="/css/basic.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <!-- <div class="container"> -->
+                <div style="float: left;" id="logo">
+                    <img src="images/seccdc.png">
+                </div>
+
+                <div style="float: right; padding-top: 10px;" id="logo">
+                    <img src="images/coles2.png">
+                </div>
+
+                <span style="clear: all; color: white; font-size: 60px; font-weight: bold;">
+                    SECCDC <br>
+                </span>
+                <span style="color: white; padding-top: 5px; font-size: 20px;">
+                    Southeast Collegiate Cyber Defense
+                </span>
+
+                <nav class="navButton">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rules</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Results</a></li>
+                        <li><a href="#">Sponsors</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+        </div>
+      </header>
+        
+    <section style="text-align: center; font-size: 200%">
+        <!-- <strong>• &nbsp; Southeast Collegiate Cyber Defense &nbsp; •</strong> -->
+    </section>
+
+    <section>
+        <!-- Begin Slideshow -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <a target="_blank" href="#"><img src="images/generic4.png" style="width:100%"></a>
+                <div class="text">ABOUT SECCDC</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/generic2.png" style="width:100%">
+                <div class="text">TEAMS</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/generic6.png" style="width:100%">
+                <div class="text">SCHEDULE</div>
+            </div>
+            
+        </div>
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
+        <!-- End Slideshow -->
+    </section>
+        
+    <section id="pageContent">
+        <main role="main">
+            <article>
+                <h2>BODY ARTICLE ONE</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donec at dui eros. Aliquam lacus dui, sollicitudin et dictum vitae, semper in tortor. Morbi nisi purus, finibus eget vulputate ut, efficitur eget massa. Vivamus hendrerit eros urna, ac congue lorem luctus nec. Cras pellentesque neque turpis, sit amet scelerisque nunc gravida ac. Aenean efficitur eu eros in vestibulum. Fusce sit amet porta nibh. Nam nisi tortor, consectetur eget laoreet in, dapibus quis dolor. Sed eu dapibus enim. Nullam pharetra gravida erat, ut hendrerit enim eleifend vel. Vestibulum tincidunt quam eu sem dictum placerat. Aliquam tincidunt sed nibh sed vehicula.</p>
+            </article>
+            <article>
+                <h2>BODY ARTICLE TWO</h2>
+                <ul style="line-height: 1.5">
+                    <li><a target="_blank" href="#">Link 1</a></li>
+                    <li><a target="_blank" href="#">Link 2</a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>BODY ARTICLE THREE</h2>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donec at dui eros. Aliquam lacus dui, sollicitudin et dictum vitae, semper in tortor. Morbi nisi purus, finibus eget vulputate ut, efficitur eget massa. Vivamus hendrerit eros urna, ac congue lorem luctus nec. Cras pellentesque neque turpis, sit amet scelerisque nunc gravida ac.
+                </p>
+
+                <ul style="line-height: 1.5">
+                    <li><a target="_blank" href="#">Link 1</a></li>
+                    <li><a target="_blank" href="#">Link 2</a></li>
+                </ul>
+
+                <p>
+                    Donec at dui eros. Aliquam lacus dui, sollicitudin et dictum vitae, semper in tortor. Morbi nisi purus, finibus eget vulputate ut, efficitur eget massa. Vivamus hendrerit eros urna, ac congue lorem luctus nec. Cras pellentesque neque turpis, sit amet scelerisque nunc gravida ac.
+                </p>
+            </article>
+        </main>
+
+        <aside>
+            <strong><div class="asidetitle" style="background-color: white; letter-spacing: .7em; text-align: center;">ANNOUNCEMENTS</div></strong>
+            <div class="myaside">
+                <strong>CONTENT ONE</strong><br />
+                <ul>
+                    <li><a target="_blank" href="">MyPage.html</a></li>
+                </ul>
+                
+            </div>
+            <div class="myaside">
+                <strong>CONTENT TWO</strong><br />
+                <h4>Section One</h4>
+                <ul style="line-height: 1.5">
+                    <li><a target="_blank" href="">HTML Tutorial</a></li>
+                    <li><a target="_blank" href="">SSH Assignment</a></li>
+                    <li><a target="_blank" href="">CSS Tutorial</a></li>
+                </ul>
+                <h4>Section Two</h4>
+                <ul style="line-height: 1.5">
+                    <li><a target="_blank" href="">Ch4b Activity 1</a></li>
+                    <li><a target="_blank" href="">Ch4b Activity 2</a></li>
+                    <li><a target="_blank" href="">Ch4 Project 2</a></li>
+                    <li><a target="_blank" href="">Ch4 Project 3</a></li>
+                    <li><a target="_blank" href="">Ch4 Project 4</a></li>
+                    <li><a target="_blank" href="">Ch4 Project 5</a></li>
+                    <li><a target="_blank" href="">Lists</a></li>
+                    <li><a target="_blank" href="">Fonts</a></li>
+                </ul>
+            </div>
+            <div class="myaside">
+                <strong>CONTENT THREE</strong><br />
+                <h4>Section One</h4>
+                <p>
+                    Vivamus hendrerit eros urna, ac congue lorem luctus nec. Cras pellentesque neque turpis, sit amet scelerisque nunc gravida ac.
+                </p>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <p>&copy; SECCDC 2018. All Rights Reserved</p>
+        
+        <address>
+            Contact us: <a href="infosec@kennesaw.edu">EMAIL</a>
+        </address>
+    </footer>
+        
+</body>
+
+</html>
