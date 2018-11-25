@@ -97,7 +97,8 @@ input, select {
 }
 
 header {
-	background: rgb(69, 81, 100);
+	/*background: rgb(69, 81, 100); */
+	background: #455164;
 	border-bottom: medium;
 	border-bottom-color: #7381C4;
 	border-bottom-style: solid;
@@ -238,7 +239,8 @@ aside {
 
 .asidetitle {
 	text-align: center;
-	color: rgb(69, 81, 100);
+	/*color: rgb(69, 81, 100); */
+	color: #455164;
 }
 
 .image {
@@ -258,7 +260,8 @@ article h2 {
 }
 
 footer {
-	background:rgb(69, 81, 100);
+	/*background:rgb(69, 81, 100);*/
+	background: #455164;
 	max-width:75%;
 	margin:auto;
 	clear:both;
@@ -272,7 +275,8 @@ footer p, address {
 }
 
 footer a {
-	color: rgb(162, 196, 240);
+	/*color: rgb(162, 196, 240); */
+	color: #A2C4F0;
 }
 
 address {
@@ -281,12 +285,14 @@ address {
 
 aside > div {
 	margin:10px auto;
-	background:rgb(69, 81, 100);
+	/*background:rgb(69, 81, 100); */
+	background: #455164;
 	min-height:100px;
 }
 
 aside a {
-	color: rgb(162, 196, 240);
+	/*color: rgb(162, 196, 240); */
+	color: #A2C4F0;
 }
 
 .logo {
