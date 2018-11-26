@@ -1,0 +1,237 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/seccdc_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="SECCDC" />
+  	<meta name="keywords" content="Security, SECCDC" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Volunteer Form</title>
+	<!-- InstanceEndEditable -->
+	<!-- InstanceBeginEditable name="head" -->
+	<!-- InstanceEndEditable -->
+	<link href="css/basic.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+        <div class="container" id="top">
+            <!-- <div class="container"> -->
+                <div class="logo" id="logo1" style="float: left;">
+                  <img src="images/seccdc.png" alt="seccdc_logo" title="seccdc_logo">
+                </div>
+
+                <div class="logo" id="logo2" style="float: right; padding-top: 10px;">
+                    <img src="images/coles2.png" alt="coles_logo" title="coles_logo">
+                </div>
+
+                <span style="clear: all; color: white; font-size: 60px; font-weight: bold;">
+                    SECCDC <br>
+                </span>
+                <span style="color: white; padding-top: 5px; font-size: 20px;">
+                    <h1>Southeast Collegiate Cyber Defense</h1>
+                </span>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="rules.html">Rules</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="teams.html">Teams</a></li>
+					<li><a href="results.html">Results</a></li>
+					<li><a href="sponsors.html">Sponsors</a></li>
+					<li><a href="support.html">Support</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</nav>
+        </div>
+</header>
+        
+    <section style="text-align: center; font-size: 200%">
+        <!-- <strong>• &nbsp; Southeast Collegiate Cyber Defense &nbsp; •</strong> -->
+    </section>
+
+<section>
+        <!-- Begin Slideshow -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <a target="_blank" href="#"><img src="images/generic4.png" alt="About SECCDC" title="About SECCDC" style="width:100%"></a>
+                <div class="text">ABOUT SECCDC</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext"></div><a target="_blank" href="teams.html" alt="Teams" title="Teams">
+                <img src="images/generic2.png" alt="Teams" title="Teams" style="width:100%"></a>
+                <div class="text">TEAMS</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+				<a target="_blank" href="schedule.html" alt="Schedule" title="Schedule">
+                <img src="images/generic6.png" alt="Schedule" title="Schedule" style="width:100%"></a>
+                <div class="text">SCHEDULE</div>
+            </div>
+            
+        </div>
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
+        <!-- End Slideshow -->
+    </section>
+        
+    <section id="pageContent">
+        <main role="main">
+            <article><!-- InstanceBeginEditable name="BodyOne" -->
+                <h2>Volunteer Information</h2>
+                <form action="http://www.formbuddy.com/cgi-bin/form.pl" method="post"> 
+				<input type="hidden" name="username" value="acaylor"> 
+				<input type="hidden" name="reqd" value="1,2,3,4"> 
+				<input type="hidden" name="url" value="http://studentweb.kennesaw.edu/~acaylor/is3260-project/volsuccess.html">
+                <p>Please fill out your information below!</p>
+				<p>
+                  <label for="textfield">First Name:<br></label>
+                  <input name="FirstName" type="text" id="FirstName" placeholder="John" title="First Name" maxlength="30">
+                </p>
+				<p>
+				  <label for="textfield">Last Name:<br></label>
+                  <input name="LastName" type="text" id="LastName" placeholder="Smith" title="Last Name" maxlength="30">
+				</p>
+				<p>
+				  <label for="email">Email:<br></label>
+                  <input name="email" type="email" id="email" placeholder="john.smith@example.com" title="Email" maxlength="64">
+				</p>
+				<p>Are you a university student?<br>
+				  <label>
+				    <input name="isStudent" type="radio" id="isStudent_0" value="Yes" checked="checked">
+				    Yes</label>
+				  <br>
+				  <label>
+				    <input type="radio" name="isStudent" value="No" id="isStudent_1">
+				    No</label>
+				  <br>
+				</p>
+				<p>
+				  <label for="frequency">If so, what year are you?<br></label>
+                  <select name="frequency" id="frequency">
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophomore">Sophomore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                    <option value="Graduate">Graduate</option>
+					<option value"Nonstudent">Not a student</option>  
+                  </select>
+				</p>
+					
+                <!-- InstanceEndEditable -->
+            </article>
+            <article><!-- InstanceBeginEditable name="BodyTwo" -->
+               
+				<p>Do you have experience being an event coordinator or staff member?<br>
+				  <label>
+				    <input name="expStaff" type="radio" id="expstaff_0" value="Yes" checked="checked">
+				    Yes</label>
+				  <br>
+				  <label>
+				    <input type="radio" name="expStaff" value="No" id="expstaff_1">
+				    No</label>
+				  <br>
+				</p>
+				<p>Are there any tasks you do not want to do as a volunteer?<br>
+				  <label>
+				    <input name="tVolunteer" type="radio" id="tVolunteer_0" value="Yes" >
+				    Yes</label>
+				  <br>
+				  <label>
+				    <input type="radio" name="tVolunteer" value="No" id="tVolunteer_1" checked="checked">
+				    No</label>
+				  <br>
+				</p>
+				<p>If yes, list them below:</p>
+				<textarea name="noTasks" cols="35" rows="10" maxlength="3000" id="noTasks" placeholder="List any tasks you would not like to volunteer for: staging setup, security, volunteer training, event staff  etc."></textarea>
+				
+				
+				<p>
+				  <label for="textarea">Tell us about yourself:<br></label>
+                  <textarea name="whoareyou" cols="35" rows="10" maxlength="10000" id="whoareyou" placeholder="What would you like to tell us"></textarea>
+				</p>
+            <!-- InstanceEndEditable -->
+            </article>
+            <article><!-- InstanceBeginEditable name="BodyThree" -->
+                <input type="submit"> | <input type="reset">
+				</form><!-- InstanceEndEditable -->
+            </article>
+        </main>
+
+        <aside>
+            <strong><div class="asidetitle" style="background-color: white; letter-spacing: .7em; text-align: center;">INFO</div></strong>
+            <div class="myaside"><!-- InstanceBeginEditable name="sidebar" -->
+                <strong>Useful Links</strong><br />
+                <ul>
+                    <li><a target="_blank" href="http://coles.kennesaw.edu/coles-overview/centers-and-institutes/center-for-information-security-education/index.php">Center for Information Security</a></li>
+					<li><a target="_blank" href="http://infosec.kennesaw.edu/ccerp">CCERP Conference</a></li>
+					<li><a target="_blank" href="http://coles.kennesaw.edu/coles-overview/centers-and-institutes/center-for-information-security-education/">Faculty Development Workshops</a></li>
+                </ul>
+                
+            </div>
+            <div class="myaside">
+                <strong>National Collegiate Cyber Defense Competition</strong><br />
+                <a href="http://nationalccdc.org/"><img src="images/nccdc_logo.png" alt="National CCDC" height="auto" class="myaside" title="National CCDC"></a>
+            </div>
+            <div class="myaside">
+                <strong>CONTENT THREE</strong><br />
+                <p>content</p>
+				
+				<!-- InstanceEndEditable -->
+            </div>
+        </aside>
+    </section>
+    <!-- Footer section -->
+	<footer id="bottom">
+		<div class="footer1" style="float: left; text-align: center">
+			<img src="images/seccdc.png" alt="seccdc_logo" title="seccdc_logo">
+			<p>&copy; SECCDC 2018. All Rights Reserved</p>
+		</div>
+		<div class="footer1" style="float: right">
+			<img src="images/coles2.png" alt="Coles" title="Coles">
+			<p>Kennesaw State University Coles College of Business<br>
+				Coles College of Business <br>1000 Chastain Road, BB 255,<br> Kennesaw, GA 30144 <br>770-423-6425
+	  		</p>
+		</div>
+		<span style="clear: all; text-align: center;">
+			<address>
+				Questions? Contact us: <a href="infosec@kennesaw.edu">EMAIL</a>
+			</address>
+			<p>&nbsp;</p>
+			<p><a href="#top">Return to Top</a></p>
+		</span>
+</footer>
+        
+</body>
+<!-- InstanceEnd --></html>
