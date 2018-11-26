@@ -11,6 +11,24 @@
 	<!-- InstanceBeginEditable name="head" -->
 	<!-- InstanceEndEditable -->
 	<link href="css/basic.css" rel="stylesheet" type="text/css">
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="scripts/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	// Can also be used with $(document).ready()
+	$(window).load(function() {
+	  $('.flexslider').flexslider({
+		animation: "slide",
+		animationLoop: false,
+		itemWidth: 110,
+		itemMargin: 5,
+		minItems: 2,
+		maxItems: 4,
+		move: 2,
+		pauseOnHover: true
+	  });
+	});
+	</script>
 </head>
 
 <body>
@@ -25,11 +43,11 @@
                     <img src="images/coles2.png" alt="coles_logo" title="coles_logo">
                 </div>
 
-                <span style="clear: all; color: white; font-size: 60px; font-weight: bold;">
+                <span style="clear: all; color: white; font-size: 60px; font-weight: bold; text-align: center;">
                     SECCDC <br>
                 </span>
-                <span style="color: white; padding-top: 5px; font-size: 20px;">
-                    <h1>Southeast Collegiate Cyber Defense</h1>
+                <span style="color: white; padding-top: 5px; font-size: 20px; text-align: center;">
+                    <h1>Southeast Collegiate Cyber Defense Competition</h1>
                 </span>
 			<nav>
 				<ul>
@@ -128,6 +146,65 @@
 				</ul>
             <!-- InstanceEndEditable -->
             </article>
+			<article>
+				<h3>Our Sponsors:</h3>
+				<!-- Place somewhere in the <body> of your page -->
+				<!-- This code is sourced from the original website seccdc.org -->
+				<div class="flexslider">
+				  <ul class="slides">
+				  <li>
+					  <img src="images/diamond1.jpg" />
+					</li>
+					<!-- <li>
+					  <img src="../images/diamond2.jpg" />
+					</li>
+					<li>
+					  <img src="../images/diamond3.jpg" />
+					</li>-->
+					<li>
+					<li>
+					  <img src="images/platinum1.jpg" />
+					</li>
+					 <li>
+					 <img src="images/platinum2.jpg" />
+					</li>
+				   <!--  <li>
+					  <img src="../images/platinum3.jpg" />
+					</li>-->
+
+				  <li>
+					  <img src="images/gold1.jpg" />
+					</li>
+					 <li>
+					  <img src="images/gold2.jpg" />
+					</li>
+				   <li>
+					  <img src="images/gold3.jpg" />
+					</li>
+					<li>
+
+					  <img src="images/silver1.jpg" />
+					</li>
+					<li>
+					 <img src="images/silver2.jpg" />
+					</li>
+				   <li>
+					  <img src="images/silver3.jpg" />
+					</li>
+					<li>
+					  <img src="images/bronze1.jpg" />
+					</li>
+					<li>
+					  <img src="images/bronze2.jpg" />
+					</li>
+					<li>
+					  <img src="images/bronze3.jpg" />
+					</li>    
+
+					<!-- items mirrored twice, total of 12 -->
+
+				</div>
+			</article>
         </main>
 
         <aside>
@@ -153,6 +230,7 @@
             </div>
         </aside>
     </section>
+	
     <!-- Footer section -->
 	<footer id="bottom">
 		<div class="footer1" style="float: left; text-align: center">
@@ -172,6 +250,7 @@
 			<p>&nbsp;</p>
 			<p><a href="#top">Return to Top</a></p>
 		</span>
+		
 </footer>
         
 </body>

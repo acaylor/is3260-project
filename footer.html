@@ -4,8 +4,27 @@
 <meta charset="utf-8">
 <title>SECCDC - Home</title>
 <link href="css/footer.css" rel="stylesheet" type="text/css">
-</head>
-
+	<!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="scripts/jquery.flexslider.js"></script></head>
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+	controlsContainer: ".mysponsors",
+    itemWidth: 210,
+    itemMargin: 5,
+    minItems: 2,
+    maxItems: 4,
+	move: 2,
+	pauseOnHover: true
+  });
+});
+	</script>
 <body>
 <div class="container">
 <div>
@@ -59,6 +78,20 @@
           <li><a href="https://mediaspace.kennesaw.edu/media/SECCDC+testimonials/1_i1nsviuk">2015 Participant Interviews</a>
           </li>
         </ul>
+	<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/bronze1.jpg" />
+    </li>
+    <li>
+      <img src="images/bronze2.jpg" />
+    </li>
+    <li>
+      <img src="images/bronze3.jpg" />
+    </li>
+  </ul>
+</div>
 	</div>
 	<div class="footer1" id="footer1">
 		<table width="992" border="0" cellpadding="10" cellspacing="0">
