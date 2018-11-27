@@ -12,6 +12,8 @@
 	<!-- InstanceEndEditable -->
 	<link href="css/basic.css" rel="stylesheet" type="text/css">
 	<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script src="scripts/jquery.flexslider.js"></script>
 	<script type="text/javascript" charset="utf-8">
@@ -35,12 +37,10 @@
 	<header>
         <div class="container" id="top">
             <!-- <div class="container"> -->
-                <div class="logo" id="logo1" style="float: left;">
-                  <img src="images/seccdc.png" alt="seccdc_logo" title="seccdc_logo">
+                <div class="logo" id="logo1" style="float: left;"> <a href="https://seccdc.org"><img src="images/seccdc.png" alt="seccdc_logo" title="seccdc_logo"></a>
                 </div>
 
-                <div class="logo" id="logo2" style="float: right; padding-top: 10px;">
-                    <img src="images/coles2.png" alt="coles_logo" title="coles_logo">
+                <div class="logo" id="logo2" style="float: right; padding-top: 10px;"> <a href="http://coles.kennesaw.edu/cise/index.php"><img src="images/coles2.png" alt="coles_logo" title="coles_logo"></a>
                 </div>
 
                 <span style="clear: all; color: white; font-size: 60px; font-weight: bold; text-align: center;">
@@ -49,23 +49,34 @@
                 <span style="color: white; padding-top: 5px; font-size: 20px; text-align: center;">
                     <h1>Southeast Collegiate Cyber Defense Competition</h1>
                 </span>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="rules.html">Rules</a></li>
-					<li><a href="schedule.html">Schedule</a></li>
-					<li><a href="teams.html">Teams</a></li>
-					<li><a href="results.html">Results</a></li>
-					<li><a href="sponsors.html">Sponsors</a></li>
-					<li><a href="support.html">Support</a></li>
-					<li><a href="contactus.html">Contact Us</a></li>
-				</ul>
-			</nav>
+		  
         </div>
 </header>
         
-    <section style="text-align: center; font-size: 200%">
+    <section>
         <!-- <strong>• &nbsp; Southeast Collegiate Cyber Defense &nbsp; •</strong> -->
+		<script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+                </script>
+	  <div class="topnav" id="myTopnav" style="max-width: 685px; margin: 0 auto;">
+			  	<a href="index.html" class="active">Home</a>
+			  	<a href="rules.html">Rules</a>
+			  	<a href="schedule.html">Schedule</a>
+			  	<a href="teams.html">Teams</a>
+			  	<a href="results.html">Results</a>
+				<a href="sponsors.html">Sponsors</a>
+				<a href="contactus.html">Contact Us</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+			</div>
     </section>
 
 <section>
@@ -74,8 +85,8 @@
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <a target="_blank" href="#"><img src="images/generic4.png" alt="About SECCDC" title="About SECCDC" style="width:100%"></a>
-                <div class="text">ABOUT SECCDC</div>
+                <a target="_blank" href="support.html"><img src="images/generic4.png" alt="About SECCDC" title="About SECCDC" style="width:100%"></a>
+                <div class="text">Support SECCDC</div>
             </div>
             
             <div class="mySlides fade">
@@ -229,21 +240,18 @@
 	
     <!-- Footer section -->
 	<footer id="bottom">
-		<div class="footer1" style="float: left; text-align: center">
-			<img src="images/seccdc.png" alt="seccdc_logo" title="seccdc_logo">
+	  <div class="footer1" style="float: left; text-align: center"> <a href="https://seccdc.org"><img src="images/seccdc.png" alt="seccdc_logo" title="seccdc_logo"></a>
 			<p>&copy; SECCDC 2018. All Rights Reserved</p>
 		</div>
-		<div class="footer1" style="float: right">
-			<img src="images/coles2.png" alt="Coles" title="Coles">
+		<div class="footer1" style="float: right"> <a href="http://coles.kennesaw.edu/cise/index.php"><img src="images/coles2.png" alt="Coles" title="Coles"></a>
 			<p>Kennesaw State University Coles College of Business<br>
 				Coles College of Business <br>1000 Chastain Road, BB 255,<br> Kennesaw, GA 30144 <br>770-423-6425
 	  		</p>
 		</div>
 		<span style="clear: all; text-align: center;">
-			<address>
+		<address>
 				<p><a href="sitemap.html">Sitemap</a> | Questions? <a href="contactus.html">Contact us</a></p>
 			</address>
-			<p></p>
 		<p>&nbsp;</p>
 			<h4><a href="#top">Return to Top</a></h4>
 		</span>
