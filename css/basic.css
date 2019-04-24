@@ -95,7 +95,19 @@ input, select {
 	margin: 0 auto;
 	text-align: center;
 }
-
+.top {
+	/*clear: both; */
+	color: white; 
+	font-size: 60px; 
+	font-weight: bold; 
+	text-align: center;
+}
+.headtext {
+	color: white; 
+	padding-top: 2px;
+	font-size: 20px; 
+	text-align: center;
+}
 header {
 	/*background: rgb(69, 81, 100); */
 	background: #455164;
@@ -103,6 +115,7 @@ header {
 	border-bottom-color: #7381C4;
 	border-bottom-style: solid;
 	border-width: 3px;
+	bottom: auto;
 }
 
 
@@ -113,7 +126,7 @@ header::after {
 }
 
 .logo {
-  float: center;
+  float: none;
   padding: 10px 10px;
 }
 
@@ -158,9 +171,8 @@ nav a::before {
   height: 4px;
   background-color: #7381C4;
   margin-top: -1px;
-
   position: absolute;
-  top: 10;
+  top: 10px;
   width: 0%;
   border-radius: 1px;
 
@@ -233,13 +245,6 @@ header img {
 	
 }
 
-/*header {
-	max-width:1000px;
-	margin:auto;
-	background:rgb(69, 81, 100);
-	padding:20px 30px;
-}*/
-
 nav ul li a {
 	background:#EEEEEE;
 	padding:2px 10px;
@@ -292,12 +297,6 @@ aside {
 	margin-right: auto;
 }
 
-.asidetitle {
-	text-align: center;
-	/*color: rgb(69, 81, 100); */
-	color: #455164;
-}
-
 .image {
 	align-self: center;
 }
@@ -321,7 +320,7 @@ footer {
 	margin:auto;
 	clear:both;
 	font-size: .75em;
-	min-height: 220px;
+	min-height: 225px;
 }
 
 footer p, address {
@@ -400,7 +399,16 @@ body > section {
 		width:100%;
 	}
 }
-
+@media screen and (max-width:905px) {
+	.logo {
+		display: none;
+	}
+}
+@media screen and (max-width:905px) {
+	.footer1 {
+		display: none;
+	}
+}
 
 /* SLIDESHOW CSS BEGINNING */
 
